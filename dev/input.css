@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ALL OTHER CSS GOES BELOW THE TAILWIND DIRECTIVES */
+
+:root {
+  --ink: 13 27 38;
+  --ink-2: 21 40 56;
+  --paper: 243 242 238;
+  --steel: 84 99 112;
+  --line: 214 216 212;
+  --signal: 240 168 32;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Archivo', system-ui, sans-serif;
+  font-variation-settings: 'wdth' 100;
+  color: rgb(var(--ink));
+  background: rgb(var(--paper));
+  -webkit-font-smoothing: antialiased;
+}
+.font-display {
+  font-variation-settings: 'wdth' 88;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

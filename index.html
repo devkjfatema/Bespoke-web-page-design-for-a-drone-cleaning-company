@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asset Cleaning Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="min-h-screen w-full bg-white">
+      <!-- ============ SITE HEADER ============ -->
+      <header class="sticky top-0 z-40 border-b border-line bg-white">
+        <div class="mx-auto flex h-[72px] max-w-frame items-center justify-between px-5 md:px-10">
+          <a href="#" class="flex items-center" aria-label="The Bionic Eye home">
+            <span class="relative block aspect-[1165/725] overflow-hidden w-[84px] md:w-[92px]">
+              <img
+                src="assets/images/the_bionic_eye.png"
+                alt="The Bionic Eye — Unmanned & Unmatched"
+                class="absolute left-0 top-0 w-full max-w-none mix-blend-multiply"
+              />
+            </span>
+          </a>
+
+          <nav aria-label="Main" class="hidden lg:block">
+            <ul class="flex items-center gap-8 text-[15px]">
+              <li><a href="#" class="text-ink/80 transition-colors duration-150 hover:text-ink">Solutions</a></li>
+              <li><a href="#" class="text-ink/80 transition-colors duration-150 hover:text-ink">Support</a></li>
+              <li><a href="#regulation" class="text-ink/80 transition-colors duration-150 hover:text-ink">Regulation</a></li>
+              <li><a href="#" class="text-ink/80 transition-colors duration-150 hover:text-ink">Sectors</a></li>
+              <li><a href="#" class="text-ink/80 transition-colors duration-150 hover:text-ink">About Us</a></li>
+              <li><a href="#enquiry" class="text-ink/80 transition-colors duration-150 hover:text-ink">Contact</a></li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="inline-flex items-center gap-1 text-ink/80 transition-colors duration-150 hover:text-ink"
+                >
+                  Shop
+                  <svg class="h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  <span class="sr-only">(opens online store)</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a
+              href="#enquiry"
+              class="group inline-flex h-12 items-center gap-3 whitespace-nowrap px-6 text-[15px] font-semibold transition-colors duration-150 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 bg-signal text-ink hover:bg-[#F6BC45] hidden h-10 px-5 text-sm md:inline-flex"
+            >
+              Book a demonstration
+              <svg class="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <button
+              type="button"
+              id="menu-toggle"
+              class="flex h-10 w-10 items-center justify-center lg:hidden"
+              aria-expanded="false"
+              aria-controls="mobile-nav"
+              aria-label="Open menu"
+            >
+              <svg id="icon-menu" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+              <svg id="icon-close" class="hidden h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile navigation (toggled by js/main.js) -->
+        <nav
+          id="mobile-nav"
+          aria-label="Main"
+          class="hidden absolute inset-x-0 top-full border-b border-line bg-white lg:hidden"
+        >
+          <ul class="px-5 py-2">
+            <li class="border-b border-line last:border-0"><a href="#" class="block py-4 text-lg">Solutions</a></li>
+            <li class="border-b border-line last:border-0"><a href="#" class="block py-4 text-lg">Support</a></li>
+            <li class="border-b border-line last:border-0"><a href="#regulation" class="block py-4 text-lg">Regulation</a></li>
+            <li class="border-b border-line last:border-0"><a href="#" class="block py-4 text-lg">Sectors</a></li>
+            <li class="border-b border-line last:border-0"><a href="#" class="block py-4 text-lg">About Us</a></li>
+            <li class="border-b border-line last:border-0"><a href="#enquiry" class="block py-4 text-lg">Contact</a></li>
+            <li class="border-b border-line last:border-0"><a href="#" class="block py-4 text-lg">Shop</a></li>
+          </ul>
+          <div class="px-5 pb-6">
+            <a
+              href="#enquiry"
+              class="group inline-flex h-12 items-center gap-3 whitespace-nowrap px-6 text-[15px] font-semibold transition-colors duration-150 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 bg-signal text-ink hover:bg-[#F6BC45] w-full justify-between"
+            >
+              Book a demonstration
+              <svg class="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ============ HERO ============ -->
+        <section aria-labelledby="hero-heading" class="bg-white">
+          <div class="mx-auto grid max-w-frame lg:grid-cols-12">
+            <div class="flex flex-col justify-between px-5 pb-12 pt-10 md:px-10 lg:col-span-7 lg:min-h-[720px] lg:pb-16 lg:pr-12 lg:pt-14">
+              <nav aria-label="Breadcrumb" class="font-mono text-xs text-steel">
+                <ol class="flex gap-2">
+                  <li><a href="#" class="hover:text-ink">Solutions</a></li>
+                  <li aria-hidden="true">/</li>
+                  <li aria-current="page" class="text-ink">Asset Cleaning</li>
+                </ol>
+              </nav>
+
+              <div class="mt-10 lg:mt-0">
+                <h1 id="hero-heading" class="font-display text-[40px] font-semibold leading-[1.02] tracking-[-0.025em] md:text-[60px] lg:text-[68px]">
+                  Facade and structure cleaning without access equipment.
+                </h1>
+                <div class="mt-8 max-w-[520px] space-y-4 text-[17px] leading-relaxed text-ink/80">
+                  <p>Drone cleaning removes the requirement for scaffolding, cradles, powered access or rope teams across a substantial proportion of facade, glazing, cladding and roof maintenance. The work is carried out from ground level, and setup is measured in minutes rather than days.</p>
+                  <p class="border-l-2 border-signal pl-4 text-ink">It does not replace access equipment for every application. We identify where it does not before specifying a system.</p>
+                </div>
+                <a
+                  href="#enquiry"
+                  class="group inline-flex h-12 items-center gap-3 whitespace-nowrap px-6 text-[15px] font-semibold transition-colors duration-150 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 bg-signal text-ink hover:bg-[#F6BC45] mt-9 w-full justify-between sm:w-auto sm:justify-start"
+                >
+                  Book a demonstration
+                  <svg class="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden bg-ink-2 aspect-[4/5] lg:col-span-5 lg:aspect-auto lg:h-full">
+              <video
+                id="hero-video"
+                class="absolute inset-0 h-full w-full object-cover object-[50%_18%]"
+                src="assets/video/hero-video.mp4"
+                poster="assets/images/Screenshot_26.png"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-label="ABZ C10 drone cleaning an industrial facade from ground level, supplied by hose"
+              ></video>
+              <button
+                type="button"
+                id="video-toggle"
+                aria-label="Pause video"
+                class="absolute bottom-5 right-5 flex h-10 w-10 items-center justify-center border border-white/50 bg-ink/60 text-white transition-colors duration-150 ease-out hover:bg-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-signal"
+              >
+                <svg id="icon-pause" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></svg>
+                <svg id="icon-play" class="hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 01 APPLICATIONS ============ -->
+        <section aria-labelledby="applications-heading" class="bg-paper py-20 lg:py-28">
+          <div class="mx-auto grid max-w-frame gap-12 px-5 md:px-10 lg:grid-cols-12 lg:gap-16">
+            <div class="lg:col-span-5">
+              <div class="flex items-center gap-4 font-mono text-xs text-steel">
+                <span class="text-ink">01</span>
+                <span class="h-px w-10 bg-ink/25" aria-hidden="true"></span>
+                <span>Applications</span>
+              </div>
+              <h2 id="applications-heading" class="font-display mt-6 text-[36px] font-semibold leading-tight tracking-[-0.02em] md:text-[44px]">
+                Applications
+              </h2>
+              <figure class="relative overflow-hidden bg-[#E3E4E0] mt-10 aspect-square w-full">
+                <img
+                  src="assets/images/application.jpg"
+                  alt="C10 drone pressure-washing a rendered facade beside a stairwell window"
+                  loading="lazy"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  style="object-position: 38% 50%"
+                />
+              </figure>
+            </div>
+
+            <ul class="self-end border-t border-ink lg:col-span-7">
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Commercial and residential facades, and glass curtain walling</span>
+              </li>
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Solar farms and rooftop arrays</span>
+              </li>
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Wind turbine towers</span>
+              </li>
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Industrial silos, tanks and cladding</span>
+              </li>
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Heritage and listed structures</span>
+              </li>
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Graffiti removal</span>
+              </li>
+              <li class="grid grid-cols-[24px_1fr] items-baseline gap-4 border-b border-line py-6 md:py-7">
+                <span class="h-2 w-2 translate-y-[-3px] bg-ink" aria-hidden="true"></span>
+                <span class="text-[20px] leading-snug md:text-[26px]">Surface coating and treatment<span class="text-steel">, currently in development</span></span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ 02 THE SYSTEM ============ -->
+        <section aria-labelledby="system-heading" class="bg-ink py-20 text-white lg:py-28">
+          <div class="mx-auto max-w-frame px-5 md:px-10">
+            <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+              <div class="lg:col-span-5">
+                <div class="flex items-center gap-4 font-mono text-xs text-white/60">
+                  <span class="text-signal">02</span>
+                  <span class="h-px w-10 bg-white/25" aria-hidden="true"></span>
+                  <span>The system</span>
+                </div>
+                <h2 id="system-heading" class="font-display mt-6 text-[36px] font-semibold leading-tight tracking-[-0.02em] md:text-[44px]">
+                  The system
+                </h2>
+                <div class="mt-8 space-y-5 text-[17px] leading-relaxed text-white/80">
+                  <p>The ABZ Innovation C10 is the platform we have standardised on. It operates to over 60 metres, delivers up to 15 litres per minute at a working pressure around 170 bar at the nozzle, up to 255 bar at peak, and uses radar for collision avoidance and standoff control. Reverse osmosis water can be specified where surface finish, seals or painted surfaces require it.</p>
+                  <p>Maximum take-off mass is 29 kg. The sub 25 kg limit that applied under the earlier authorisation route is not required under UK SORA.</p>
+                </div>
+              </div>
+
+              <div class="relative aspect-[3/2] bg-white lg:col-span-7 lg:aspect-auto lg:min-h-[420px]">
+                <img
+                  src="assets/images/C10-2.png"
+                  alt="ABZ Innovation C10 cleaning drone, side view with lance and hose connection"
+                  class="absolute inset-0 h-full w-full scale-[1.12] object-contain"
+                />
+                <span class="absolute bottom-4 left-5 font-mono text-[11px] text-steel">ABZ Innovation C10</span>
+              </div>
+            </div>
+
+            <!-- Specification panel -->
+            <div class="mt-16 border border-white/20 lg:mt-20">
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-white/20 px-6 py-4 font-mono text-xs text-white/60 md:px-8">
+                <span class="text-white">ABZ Innovation C10</span>
+                <span>Specification</span>
+              </div>
+              <div class="grid lg:grid-cols-12">
+                <dl class="lg:col-span-8">
+                  <div class="grid gap-1 border-b border-white/10 px-6 py-5 last:border-0 md:grid-cols-[220px_1fr] md:gap-8 md:px-8 md:py-6">
+                    <dt class="font-mono text-xs uppercase tracking-[0.08em] text-white/55 md:pt-2">Working height</dt>
+                    <dd class="font-display text-[22px] font-medium leading-snug md:text-[26px]">Over 60 metres</dd>
+                  </div>
+                  <div class="grid gap-1 border-b border-white/10 px-6 py-5 last:border-0 md:grid-cols-[220px_1fr] md:gap-8 md:px-8 md:py-6">
+                    <dt class="font-mono text-xs uppercase tracking-[0.08em] text-white/55 md:pt-2">Flow rate</dt>
+                    <dd class="font-display text-[22px] font-medium leading-snug md:text-[26px]">Up to 15 litres per minute</dd>
+                  </div>
+                  <div class="grid gap-1 border-b border-white/10 px-6 py-5 last:border-0 md:grid-cols-[220px_1fr] md:gap-8 md:px-8 md:py-6">
+                    <dt class="font-mono text-xs uppercase tracking-[0.08em] text-white/55 md:pt-2">Working pressure</dt>
+                    <dd class="font-display text-[22px] font-medium leading-snug md:text-[26px]">Around 170 bar at the nozzle, up to 255 bar at peak</dd>
+                  </div>
+                  <div class="grid gap-1 border-b border-white/10 px-6 py-5 last:border-0 md:grid-cols-[220px_1fr] md:gap-8 md:px-8 md:py-6">
+                    <dt class="font-mono text-xs uppercase tracking-[0.08em] text-white/55 md:pt-2">Collision avoidance</dt>
+                    <dd class="font-display text-[22px] font-medium leading-snug md:text-[26px]">Radar, with standoff control</dd>
+                  </div>
+                  <div class="grid gap-1 border-b border-white/10 px-6 py-5 last:border-0 md:grid-cols-[220px_1fr] md:gap-8 md:px-8 md:py-6">
+                    <dt class="font-mono text-xs uppercase tracking-[0.08em] text-white/55 md:pt-2">Maximum take-off mass</dt>
+                    <dd class="font-display text-[22px] font-medium leading-snug md:text-[26px]">29 kg</dd>
+                  </div>
+                </dl>
+                <div class="hidden border-l border-white/20 p-8 lg:col-span-4 lg:block">
+                  <!-- Elevation schematic illustrating the "Over 60 metres" working height -->
+                  <svg viewBox="0 0 260 330" class="h-full w-full" role="img" aria-label="Elevation diagram: working height over 60 metres">
+                    <!-- ground -->
+                    <line x1="10" y1="300" x2="250" y2="300" stroke="rgba(255,255,255,0.5)" />
+                    <!-- scale -->
+                    <line x1="40" y1="300" x2="40" y2="27.2" stroke="rgba(255,255,255,0.35)" />
+                    <g><line x1="34" x2="40" y1="300" y2="300" stroke="rgba(255,255,255,0.5)" /><text x="28" y="303" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">0</text></g>
+                    <g><line x1="34" x2="40" y1="256" y2="256" stroke="rgba(255,255,255,0.5)" /><text x="28" y="259" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">10</text></g>
+                    <g><line x1="34" x2="40" y1="212" y2="212" stroke="rgba(255,255,255,0.5)" /><text x="28" y="215" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">20</text></g>
+                    <g><line x1="34" x2="40" y1="168" y2="168" stroke="rgba(255,255,255,0.5)" /><text x="28" y="171" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">30</text></g>
+                    <g><line x1="34" x2="40" y1="124" y2="124" stroke="rgba(255,255,255,0.5)" /><text x="28" y="127" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">40</text></g>
+                    <g><line x1="34" x2="40" y1="80" y2="80" stroke="rgba(255,255,255,0.5)" /><text x="28" y="83" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">50</text></g>
+                    <g><line x1="34" x2="40" y1="36" y2="36" stroke="rgba(255,255,255,0.5)" /><text x="28" y="39" text-anchor="end" font-size="9" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono">60</text></g>
+                    <!-- structure -->
+                    <rect x="150" y="27.2" width="70" height="272.8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.3)" />
+                    <line x1="150" x2="220" y1="278" y2="278" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="256" y2="256" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="234" y2="234" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="212" y2="212" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="190" y2="190" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="168" y2="168" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="146" y2="146" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="124" y2="124" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="102" y2="102" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="80" y2="80" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="58" y2="58" stroke="rgba(255,255,255,0.1)" />
+                    <line x1="150" x2="220" y1="36" y2="36" stroke="rgba(255,255,255,0.1)" />
+                    <!-- tether / standoff -->
+                    <line x1="110" y1="27.2" x2="110" y2="300" stroke="rgb(240 168 32)" stroke-dasharray="3 4" />
+                    <line x1="122" y1="27.2" x2="150" y2="27.2" stroke="rgba(255,255,255,0.5)" stroke-dasharray="2 3" />
+                    <!-- drone -->
+                    <g transform="translate(110 27.2)">
+                      <rect x="-10" y="-4" width="20" height="8" fill="rgb(240 168 32)" />
+                      <line x1="-20" x2="-6" y1="-8" y2="-8" stroke="white" stroke-width="2" />
+                      <line x1="6" x2="20" y1="-8" y2="-8" stroke="white" stroke-width="2" />
+                    </g>
+                    <text x="110" y="9.2" text-anchor="middle" font-size="10" fill="white" font-family="IBM Plex Mono">&gt;60 m</text>
+                    <!-- ground unit -->
+                    <rect x="96" y="288" width="28" height="12" fill="rgba(255,255,255,0.25)" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 03 WHAT WE SUPPLY ============ -->
+        <section aria-labelledby="supply-heading" class="bg-white py-20 lg:py-28">
+          <div class="mx-auto max-w-frame px-5 md:px-10">
+            <div class="flex items-center gap-4 font-mono text-xs text-steel">
+              <span class="text-ink">03</span>
+              <span class="h-px w-10 bg-ink/25" aria-hidden="true"></span>
+              <span>What we supply</span>
+            </div>
+            <h2 id="supply-heading" class="sr-only">What we supply</h2>
+
+            <p class="font-display mt-8 max-w-[960px] text-[30px] font-semibold leading-[1.12] tracking-[-0.02em] md:text-[48px]">
+              The drone, pressure system and nozzle set specified against your surfaces.
+            </p>
+
+            <div class="mt-14 grid gap-10 lg:grid-cols-12 lg:gap-16">
+              <!-- Nozzle detail sits on its own white studio background — no frame needed -->
+              <figure class="relative aspect-[4/3] overflow-hidden lg:col-span-5 lg:aspect-auto">
+                <img
+                  src="assets/images/C10-7.png"
+                  alt="Close-up of the C10 nozzle and hose mount beneath the airframe"
+                  loading="lazy"
+                  class="absolute inset-0 h-full w-full object-cover object-[50%_40%]"
+                />
+              </figure>
+
+              <div class="lg:col-span-7">
+                <!-- Cropped region (184,60 · 1078×520) of a 1393×654 source image, trims video-player chrome -->
+                <figure class="relative overflow-hidden bg-ink" style="aspect-ratio: 1078 / 520">
+                  <img
+                    src="assets/images/video_image.png"
+                    alt="Van-mounted pressure system with hose reel, shown by a Bionic Eye engineer"
+                    loading="lazy"
+                    class="absolute max-w-none"
+                    style="width: 129.2207792207792%; left: -17.068645640074212%; top: -11.538461538461538%"
+                  />
+                </figure>
+                <div class="mt-10 grid gap-10 md:grid-cols-2 lg:gap-12">
+                  <p class="border-t border-ink pt-6 text-[17px] leading-relaxed text-ink/80">
+                    Pilot training is available as an additional service, and we can advise on preparing the operations manual and supporting documentation required for CAA authorisation.
+                  </p>
+                  <p class="border-t border-ink pt-6 text-[17px] leading-relaxed text-ink/80">
+                    Parts are held in the United Kingdom, repairs are carried out in our own workshop, and the enhanced warranty option provides priority servicing and maintenance, with loan equipment where parts are unavailable. We also offer white label services, arranged in advance, giving clients additional capacity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 04 REGULATORY POSITION ============ -->
+        <section id="regulation" aria-labelledby="regulation-heading" class="bg-paper py-20 lg:py-24">
+          <div class="mx-auto grid max-w-frame gap-10 px-5 md:px-10 lg:grid-cols-12 lg:gap-16">
+            <div class="lg:col-span-4">
+              <div class="flex items-center gap-4 font-mono text-xs text-steel">
+                <span class="text-ink">04</span>
+                <span class="h-px w-10 bg-ink/25" aria-hidden="true"></span>
+                <span>Regulatory position</span>
+              </div>
+              <h2 id="regulation-heading" class="font-display mt-6 text-[36px] font-semibold leading-tight tracking-[-0.02em] md:text-[44px]">
+                Regulatory position
+              </h2>
+            </div>
+            <div class="border-l-2 border-signal pl-6 md:pl-10 lg:col-span-8">
+              <p class="text-[20px] leading-relaxed md:text-[22px]">Cleaning operations at height adjacent to structures fall within the Specific Category, which requires an Operational Authorisation from the Civil Aviation Authority. Since April 2025 these are granted through UK SORA.</p>
+              <p class="mt-6 text-[17px] leading-relaxed text-ink/80">The Operational Authorisation is held by the operator and not the supplier. The Bionic Eye assists clients in attaining their own, drawing on the UK SORA authorisation we hold for cleaning operations with our own PowerWash system, obtained in January 2026, and on the applications we have supported since. The first client Operational Authorisation for the C10 has now been granted, in the client's own name, with two further applications at final assessment.</p>
+              <a
+                href="#"
+                class="group inline-flex h-12 items-center gap-3 whitespace-nowrap px-6 text-[15px] font-semibold transition-colors duration-150 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 border border-ink/30 text-ink hover:border-ink hover:bg-ink/5 mt-9"
+              >
+                How authorisation works
+                <svg class="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 05 PROVEN IN THE FIELD ============ -->
+        <section aria-labelledby="field-heading" class="bg-white py-20 lg:py-28">
+          <div class="mx-auto max-w-frame px-5 md:px-10">
+            <div class="grid gap-6 lg:grid-cols-12 lg:gap-16">
+              <div class="lg:col-span-5">
+                <div class="flex items-center gap-4 font-mono text-xs text-steel">
+                  <span class="text-ink">05</span>
+                  <span class="h-px w-10 bg-ink/25" aria-hidden="true"></span>
+                  <span>Proven in the field</span>
+                </div>
+                <h2 id="field-heading" class="font-display mt-6 text-[36px] font-semibold leading-tight tracking-[-0.02em] md:text-[44px]">
+                  Proven in the field
+                </h2>
+              </div>
+              <p class="self-end text-[20px] leading-relaxed lg:col-span-7">ABZ Innovation's case studies show what the C10 delivers in service.</p>
+            </div>
+
+            <div class="mt-14 grid gap-12 md:grid-cols-2 md:gap-8 lg:gap-16">
+              <article class="flex flex-col">
+                <figure class="relative overflow-hidden bg-[#E3E4E0] aspect-[3/2]">
+                  <img
+                    src="assets/images/IMG_2240.jpg"
+                    alt="Two operators watching the C10 clean the cladding of an agricultural building"
+                    loading="lazy"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    style="object-position: 50% 45%"
+                  />
+                </figure>
+                <div class="mt-6 flex items-baseline gap-3 border-b border-line pb-5">
+                  <span class="font-display text-[56px] font-semibold leading-none tracking-[-0.03em]">300</span>
+                  <span class="font-mono text-sm text-steel">m² / hour</span>
+                </div>
+                <p class="mt-5 text-[17px] leading-relaxed text-ink/80">A factory facade was cleaned at around 300 square metres an hour using chemical-free reverse osmosis water.</p>
+              </article>
+
+              <article class="flex flex-col">
+                <figure class="relative overflow-hidden bg-[#E3E4E0] aspect-[3/2]">
+                  <img
+                    src="assets/images/C10_3.jpg"
+                    alt="C10 cleaning the glazing and stone cladding of a commercial building"
+                    loading="lazy"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    style="object-position: 60% 40%"
+                  />
+                </figure>
+                <div class="mt-6 flex items-baseline gap-3 border-b border-line pb-5">
+                  <span class="font-display text-[56px] font-semibold leading-none tracking-[-0.03em]">550</span>
+                  <span class="font-mono text-sm text-steel">m² roof</span>
+                </div>
+                <p class="mt-5 text-[17px] leading-relaxed text-ink/80">A roof carrying ten years of moss, about 550 square metres, was cleared in roughly three hours with no chemicals, and the system was set up and ready to fly in fifteen minutes.</p>
+              </article>
+            </div>
+
+            <p class="mt-12 font-mono text-xs leading-relaxed text-steel">Figures are from ABZ Innovation case studies. Actual output varies with the surface, the level of soiling and site conditions.</p>
+          </div>
+        </section>
+
+        <!-- ============ 06 ENQUIRY ============ -->
+        <section id="enquiry" aria-labelledby="enquiry-heading" class="scroll-mt-[72px] bg-ink py-20 text-white lg:py-28">
+          <div class="mx-auto grid max-w-frame gap-12 px-5 md:px-10 lg:grid-cols-12 lg:gap-16">
+            <div class="lg:col-span-5">
+              <div class="flex items-center gap-4 font-mono text-xs text-white/60">
+                <span class="text-signal">06</span>
+                <span class="h-px w-10 bg-white/25" aria-hidden="true"></span>
+                <span>Enquiry</span>
+              </div>
+              <h2 id="enquiry-heading" class="font-display mt-6 text-[36px] font-semibold leading-[1.08] tracking-[-0.02em] md:text-[48px]">
+                Send us the sites you intend to work on.
+              </h2>
+              <p class="mt-6 max-w-[460px] text-[17px] leading-relaxed text-white/80">We will identify which are straightforward under a standard authorisation, which require additional work, and which are unlikely to be viable, before any commitment is made.</p>
+            </div>
+
+            <div class="bg-white p-6 text-ink md:p-10 lg:col-span-7">
+              <!-- Success state -->
+              <div id="enquiry-sent" class="hidden flex min-h-[420px] flex-col items-start justify-center" role="status">
+                <span class="flex h-12 w-12 items-center justify-center bg-signal">
+                  <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                </span>
+                <p class="font-display mt-6 text-[28px] font-semibold">Enquiry received.</p>
+                <button type="button" id="enquiry-reset" class="mt-6 font-mono text-sm underline underline-offset-4">
+                  Send another
+                </button>
+              </div>
+
+              <!-- Form -->
+              <form id="enquiry-form" novalidate>
+                <div class="grid gap-6 md:grid-cols-2">
+                  <div>
+                    <label for="name" class="text-sm font-medium">Name<span class="text-steel" aria-hidden="true"> *</span></label>
+                    <input id="name" name="name" type="text" autocomplete="name" aria-invalid="false" class="mt-2 w-full border bg-white px-4 text-[16px] text-ink outline-none transition-colors duration-150 focus:border-ink focus:ring-1 focus:ring-ink h-12 border-line" />
+                  </div>
+                  <div>
+                    <label for="company" class="text-sm font-medium">Company</label>
+                    <input id="company" name="company" type="text" autocomplete="organization" aria-invalid="false" class="mt-2 w-full border bg-white px-4 text-[16px] text-ink outline-none transition-colors duration-150 focus:border-ink focus:ring-1 focus:ring-ink h-12 border-line" />
+                  </div>
+                  <div>
+                    <label for="email" class="text-sm font-medium">Email<span class="text-steel" aria-hidden="true"> *</span></label>
+                    <input id="email" name="email" type="email" autocomplete="email" aria-invalid="false" class="mt-2 w-full border bg-white px-4 text-[16px] text-ink outline-none transition-colors duration-150 focus:border-ink focus:ring-1 focus:ring-ink h-12 border-line" />
+                  </div>
+                  <div>
+                    <label for="telephone" class="text-sm font-medium">Telephone</label>
+                    <input id="telephone" name="telephone" type="tel" autocomplete="tel" aria-invalid="false" class="mt-2 w-full border bg-white px-4 text-[16px] text-ink outline-none transition-colors duration-150 focus:border-ink focus:ring-1 focus:ring-ink h-12 border-line" />
+                  </div>
+                  <div class="md:col-span-2">
+                    <label for="sites" class="text-sm font-medium">Sites or work involved<span class="text-steel" aria-hidden="true"> *</span></label>
+                    <textarea id="sites" name="sites" rows="5" aria-invalid="false" class="mt-2 w-full border bg-white px-4 text-[16px] text-ink outline-none transition-colors duration-150 focus:border-ink focus:ring-1 focus:ring-ink resize-y py-3 border-line"></textarea>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  id="enquiry-submit"
+                  class="group mt-8 inline-flex h-12 w-full items-center justify-between gap-3 bg-signal px-6 text-[15px] font-semibold text-ink transition-colors duration-150 ease-out hover:bg-[#F6BC45] focus:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 disabled:opacity-70 sm:w-auto sm:justify-start"
+                >
+                  Book a demonstration
+                  <svg id="submit-arrow" class="h-4 w-4 transition-transform duration-150 group-hover:translate-x-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  <svg id="submit-spinner" class="hidden h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ============ SITE FOOTER ============ -->
+      <footer class="border-t border-white/15 bg-ink text-white">
+        <div class="mx-auto max-w-frame px-5 py-16 md:px-10">
+          <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+              <span class="relative block aspect-[1165/725] overflow-hidden w-[150px]">
+                <img
+                  src="assets/images/the_bionic_eye.png"
+                  alt="The Bionic Eye — Unmanned & Unmatched"
+                  class="absolute left-0 top-0 w-full max-w-none invert mix-blend-screen"
+                />
+              </span>
+              <address class="mt-6 max-w-[360px] text-[15px] not-italic leading-relaxed text-white/75">
+                The Bionic Eye, Bionic House, Hall Farm, Berry Lane, Chorleywood, WD3 5EX, United Kingdom.
+                <br />
+                Telephone <a href="tel:+441753655886" class="text-white underline-offset-4 hover:underline">+44 1753 655886</a>.
+                Email <a href="mailto:info@thebioniceye.co.uk" class="text-white underline-offset-4 hover:underline">info@thebioniceye.co.uk</a>.
+              </address>
+            </div>
+
+            <nav aria-label="Footer" class="lg:col-span-3">
+              <ul class="grid grid-cols-2 gap-x-6 gap-y-3 text-[15px] lg:grid-cols-1">
+                <li><a href="#" class="text-white/75 transition-colors duration-150 hover:text-white">Solutions</a></li>
+                <li><a href="#" class="text-white/75 transition-colors duration-150 hover:text-white">Support</a></li>
+                <li><a href="#regulation" class="text-white/75 transition-colors duration-150 hover:text-white">Regulation</a></li>
+                <li><a href="#" class="text-white/75 transition-colors duration-150 hover:text-white">Sectors</a></li>
+                <li><a href="#" class="text-white/75 transition-colors duration-150 hover:text-white">About Us</a></li>
+                <li><a href="#enquiry" class="text-white/75 transition-colors duration-150 hover:text-white">Contact</a></li>
+                <li><a href="#" class="text-white/75 transition-colors duration-150 hover:text-white">Shop</a></li>
+              </ul>
+            </nav>
+
+            <div class="lg:col-span-4">
+              <p class="font-mono text-xs text-white/60">Specialist brands</p>
+              <ul class="mt-4 space-y-2 text-[17px] font-medium">
+                <li><a href="#" class="hover:text-signal transition-colors duration-150">FarmingByDrone</a></li>
+                <li><a href="#" class="hover:text-signal transition-colors duration-150">PowerWash</a></li>
+                <li><a href="#" class="hover:text-signal transition-colors duration-150">CleaningByDrone</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-6 border-t border-white/15 pt-8 text-sm leading-relaxed text-white/70 md:grid-cols-2">
+            <p>The Operational Authorisation is held by the operator and not the supplier. The Bionic Eye assists clients in attaining their own.</p>
+            <p>CAA approved since 2014. UK SORA authorisation held for cleaning operations with the PowerWash system since January 2026.</p>
+          </div>
+          <p class="mt-8 font-mono text-[11px] leading-relaxed text-white/60">The Bionic Eye Ltd. Registered in England and Wales, company number 09053005. Registered office: 22 Wycombe End, Beaconsfield HP9 1NB.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
